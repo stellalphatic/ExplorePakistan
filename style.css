@@ -1,0 +1,81 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    
+}
+
+ /* HEADER */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+    
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    
+}
+.nav-item a{
+    margin: 20px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: azure;
+
+    
+}
+.nav-item a:hover{
+    text-decoration: 3px underline aqua;
+    color: aqua;
+}
+.dropdown-menu{
+    display: none;
+}
+  
+.navbar .nav-item #places:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    background-color: #352d2d;
+    border-radius: 20px;
+}
+
+.dropdown-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+
+.login{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 600;
+    margin: 0 5px;
+    transition: all 0.5s ease-in-out;
+    color: aliceblue;
+}
+.login:hover{
+    background: #dcd6d6;
+    color: rgb(0, 0, 0);
+}
+
+/* HERO SECTION */
+
+#home{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+#home video{
+    object-fit: cover;
+}
