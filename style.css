@@ -81,8 +81,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
-    padding: 0 30px 0 20px;
+    width: 98vw;
+    padding: 0 10px;
     z-index: 5;
     
 }
@@ -293,27 +293,29 @@ a{
 .articles-section{
     position: relative;
     margin: 40px 20px;
+    padding: 5% 0;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #373d3641;
-    gap: 80px;
+    background: #373d362f;
+    gap: 30px;
 }
 .articles-section>h2{
     color: #050505;
     font-weight: 900;
     text-align: center;
     font-size: 3rem;
-    padding: 100px;
+    padding: 70px 100px 40px 100px;
 }
   
 .articles {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+   
  
   }
   
@@ -417,48 +419,67 @@ article {
   }
   /* HISTORY-SECTION */
   .history-section{
-    height: 60vh;
-    width: 100vw;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+    height: 70vh;
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
   } 
   .history-content{
-   
+   padding-left: 10%;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 35%;
     height: 80%;
     justify-content: center;
   }
   .history-content h2{
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 20px 0;
-    line-height: 3rem;
-    padding-right: 60px;
+    line-height: 3.1rem;
+    padding-right: 20%;
   }
   .history-content p{
     font-size: 1.3rem;
     font-weight: 400;
     color: #0505056e;
   }
+  .history-image{
+    width: 25%;
+  }
   .history-section img{
     display: inline-block;
     object-fit: cover;
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 320px;
     border-radius: 40%;
+    overflow: hidden;
   }
-  .history-section figcaption{
+ .history-section figcaption{
+    display: flex;
+    justify-content: center;
+    
+ }
+  .history-section  a{
+    position: relative;
+    width: 80%;
+    color: #050505;
+    background: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
-    box-shadow: 5px 10px 5px #aaaaaa;
-    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 5px #aaaaaa;
+    padding: 20px ;
   }
-
-
+  .history-section  a p{
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.547) ;
+  }
  
   
 /* FOOTER */
@@ -505,7 +526,7 @@ footer {
     color: #ffffff;
 }
 
-/* ANDJNJKD AJNDJANDDSASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/*BUTTON ANIMATION*/
 
 
 .wrapper  a{
