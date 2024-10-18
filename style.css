@@ -86,6 +86,12 @@ a{
     z-index: 5;
     
 }
+.navbar .logo{
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    filter: invert(1);
+}
 .nav-list{
     display: flex;
     list-style: none;
@@ -258,18 +264,20 @@ a{
     gap: 15px;
 }
 .intro h2{
-    line-height: 40px;
+    line-height: 2.5rem;
     font-size: 3rem;
     
 }
 .intro h3{
     font-size: 2rem;
-    font-weight: 150;
+    font-weight: 200;
+
    
 }
 .intro p{
     font-size: 1.1rem;
     line-height: 25px;
+    color: #050505ac;
 }
 .intro-img{
     width: 40%;
@@ -496,3 +504,50 @@ footer {
 .footer-section ul li a:hover {
     color: #ffffff;
 }
+
+/* ANDJNJKD AJNDJANDDSASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+
+
+.wrapper  a{
+    display: block;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: #666363;
+    border: 2px solid #7f7e7e;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .4s;
+    z-index: 99;
+  }
+  
+.wrapper  a span{
+    position: relative;
+    z-index: 99;
+  }
+  
+ .wrapper a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+    background: #09da14;
+    transition: all .4s;
+  }
+  
+ .wrapper a:hover{
+    color: #fff;
+  }
+  
+ .wrapper a:hover:after{
+    width: 100%;
+  }
