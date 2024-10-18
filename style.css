@@ -155,10 +155,8 @@ a{
     border-left: 1px solid rgba(250, 250, 250, 0.3);
 }
 .mega-links li a{
-    display: inline-block;
-    width: 100%;
-
-    padding: 0 10px;
+    display: block;
+    padding: 0 60px;
     transition: all 0.3s ease;
 }
 .mega-links li a:hover{
