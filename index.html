@@ -6,14 +6,25 @@
     <title>Explore Pakistan</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./assets/image.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="loader"></div>
     <nav>
       <div class="navbar">
-        <img src="./assets/wanted.jpeg" alt="Leader" height="60px" width="60px" />
+        <img
+          src="./assets/wanted.jpeg"
+          alt="Leader"
+          height="60px"
+          width="60px"
+        />
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" id="places">Places</a>
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item" id="places">
+            <a href="#">Places<i class="ri-arrow-down-s-fill"></i></a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="#">Punjab</a></li>
@@ -24,22 +35,348 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item"><a href="#">Northern Areas</a></li>
-          <li class="nav-item"><a href="#">Historical Sites</a></li>
-          <li class="nav-item"><a href="#">Biodiversity</a></li>
-          <li class="nav-item"><a href="#">Landmarks</a></li>
+          <li class="nav-item">
+            <a href="#">Northern Areas<i class="ri-arrow-down-s-fill"></i></a>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Skardu</a></li>
+                    <li><a href="#">Murree</a></li>
+                    <li><a href="#">Naran Valley</a></li>
+                    <li><a href="#">Kalam</a></li>
+                    <li><a href="#">Kalash Valley</a></li>
+                    <li><a href="#">Balakot</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Chitral</a></li>
+                    <li><a href="#">Kashmir</a></li>
+                    <li><a href="#">Hunza valley</a></li>
+                    <li><a href="#">Babusar Top</a></li>
+                    <li><a href="#">Chilas</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Mansehra</a></li>
+                    <li><a href="#">Malam Jabba</a></li>
+                    <li><a href="#">Tirich Mir</a></li>
+                    <li><a href="#">Kagan Valley</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">Historical Sites<i class="ri-arrow-down-s-fill"></i></a>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Badshahi Mosque</a></li>
+                    <li><a href="#">Lahore Fort</a></li>
+                    <li><a href="#">Mohenjo Daro</a></li>
+                    <li><a href="#">Masjid Wazir Khan</a></li>
+                    <li><a href="#">Rohatas Fort</a></li>
+                    <li><a href="#">13 Lahore Gates</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Minar-e-Pakistan</a></li>
+                    <li><a href="#">Harrapa</a></li>
+                    <li><a href="#">Khewra Salt Mines</a></li>
+                    <li><a href="#">Ranikot Fort</a></li>
+                    <li><a href="#">Tomb of Jahangir</a></li>
+                    <li><a href="#">Katas Raj Temple</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Mohatta Palace Museum</a></li>
+                    <li><a href="#">Mazar-e-Quaid</a></li>
+                    <li><a href="#">Balochistan</a></li>
+                    <li><a href="#">Pakistan Monument</a></li>
+                    <li><a href="#">Noor Mahal</a></li>
+                    <li><a href="#">Shalimar Garden</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Biodiversity<i class="ri-arrow-down-s-fill"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Endangered Species</a></li>
+                <li><a href="#">National Parks</a></li>
+                <li><a href="#">Flora</a></li>
+                <li><a href="#">Fauna</a></li>
+                <li><a href="#">Forests</a></li>
+                <li><a href="#">Conservation efforts</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">Culture<i class="ri-arrow-down-s-fill"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Festivals</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Traditions</a></li>
+                <li><a href="#">Music(instruments)</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
-        <div>
-          <a href="#" class="login">Login</a>
-          <a href="#" class="login">Sign up</a>
+        <div class="nav-list2">
+          <a href="#">Contact Us <i class="ri-mail-line"></i></a>
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="currentColor"
+            >
+              <path
+                d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
+              ></path>
+            </svg>
+          </a>
+          <!-- <a href="#" class="login">Login</a>
+          <a href="#" class="login">Sign up</a> -->
         </div>
       </div>
     </nav>
     <main>
-      <div id="home">
-        <video src="./assets/News-card-desktop.mp4" autoplay loop></video>
-      </div>
-      <section id="intorduction"></section>
+      <section id="home">
+        <img src="./assets/night.jpeg" alt="" />
+      </section>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Explore the Wonders of Pakistan</h2>
+          <p>
+            From ancient civilizations to breathtaking landscapes, embark on a
+            journey to explore Pakistan's rich heritage, vibrant culture, and
+            natural beauty.
+          </p>
+          <a href="" class="primary-btn"
+            >Start Your Journey <i class="ri-arrow-right-circle-fill"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="intro-section">
+        <div class="intro">
+          <h2>Discover Mysterious Places with Explore Pakistan</h2>
+          <h3>About Explore Pakistan with Us</h3>
+          <p>
+            We are here to let your eyes see the most appealing and satisfying
+            views around the country of Pakistan.We provide all the help and
+            facilities for you make your life journey full of beautiful
+            adventures.Find out more about places to Explore Pakistan with Us.
+          </p>
+          <a href="#" class="primary-btn"
+            >Learn More <i class="ri-arrow-right-fill"></i
+          ></a>
+        </div>
+        <div class="intro-img">
+          <img src="./assets/greenmountain.jpg" alt="mountain" />
+        </div>
+      </section>
+      <hr />
+      <section class="articles-section">
+        <h2>Explore Pakistan - Find Your Peace Out There</h2>
+        <section class="articles">
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/greenmountain.jpg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>K-2</h2>
+                <p>
+                  Mount Godwin Austen, also Known as K2,is the world's second
+                  highest Peak after Mount Everest......
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/night.jpeg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Nanga Parbat</h2>
+                <p>
+                  Nanga Parbat is an immerse and dramatic peak rising far above
+                  its surrounding terrain it is known to....
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/night.jpeg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Babusar Top</h2>
+                <p>
+                  Babusar Top is a high mountain pass in Pakistan at the North
+                  of the 150 km long Kaghan Valley....
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/night.jpeg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Naran Kaghan</h2>
+                <p>
+                  Naran Kaghan, in upper Kaghan Valley in Mansehra District of
+                  Khyber Pakhtunkhwa province of Pakistan.....
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="articles">
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/greenmountain.jpg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>K-2</h2>
+                <p>
+                  Mount Godwin Austen, also Known as K2,is the world's second
+                  highest Peak after Mount Everest.....
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/night.jpeg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Khunjerab Pass</h2>
+                <p>
+                  The Khunjerab Pass is the highest-paved international border
+                  crossing in the world and.....
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/night.jpeg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Kalam Swat</h2>
+                <p>
+                  Kalam and Sawat, a valley located at distance of 99 Kilometres
+                  from Mingora in the....
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="./assets/night.jpeg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Hunza Valley</h2>
+                <p>
+                  Hunza is a mountainous valley in the north of the
+                  Gilgit-Baltistan region of Pakistan.....
+                </p>
+                <a href="#" class="read-more">
+                  Read more<i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
     </main>
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Our Team</h3>
+          <ul>
+            <li><a href="#">Shahzaib</a></li>
+            <li><a href="#">Hussain</a></li>
+            <li><a href="#">Numair</a></li>
+            <li><a href="#">Atika</a></li>
+            <li><a href="#">Huzayfa</a></li>
+            <li><a href="#">Behar Khan</a></li>
+            <li><a href="#">Husnain</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Email: email@explore.com</a></li>
+            <li><a href="#">Phone: 0987654321</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script>
+      window.addEventListener("load", () => {
+        document.querySelector(".loader").classList.add("loader--hidden");
+        document
+          .querySelector(".loader")
+          .addEventListener("transitionend", () => {
+            document.body.removeChild(document.querySelector(".loader"));
+          });
+      });
+    </script>
   </body>
 </html>
