@@ -189,7 +189,11 @@ a{
 .nav-list2 a{
       padding:5px 20px;
       border-left: 1px solid grey;
-    
+      transition: all 0.3 ease;
+}
+.nav-list2 a:hover{
+    color: rgb(39, 226, 10);
+    background: #00000048;
 }
 
 /* HERO SECTION */
@@ -222,7 +226,7 @@ a{
     z-index: 3;   
     overflow: hidden;
     animation: change 15s infinite ease-in-out;
-}
+}   
 @keyframes change{
     0%{
           background-image:url('./assets/image1.jpeg') ;
