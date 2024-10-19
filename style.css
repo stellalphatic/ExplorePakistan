@@ -194,7 +194,7 @@ a{
 
 /* HERO SECTION */
 
-#home{
+/* #home{
     position: absolute; 
     top: 0;
     height: 100vh;
@@ -208,15 +208,40 @@ a{
     object-fit: cover;
     overflow: hidden;
     z-index: -1;   
-}
+} */
 
 .hero{
+    background-image: url('./assets/image1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     height: 98vh;
     width: 100%;
     z-index: 3;   
     overflow: hidden;
+    animation: change 11s infinite ease-in-out;
+}
+@keyframes change{
+    0%{
+          background-image:url('./assets/image1.jpeg') ;
+    }
+    20%{
+        background-image:url('./assets/image2.jpeg') ;
+  }
+  40%{
+    background-image:url('./assets/image3.jpeg') ;
+}
+60%{
+    background-image:url('./assets/image4.jpeg') ;
+}
+80%{
+    background-image:url('./assets/image6.jpeg') ;
+}
+100%{
+    background-image:url('./assets/image7.jpeg') ;
+}
 }
 .hero-content{
     background-color: #0505057f;
