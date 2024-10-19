@@ -82,7 +82,7 @@ a{
     align-items: center;
     justify-content: space-between;
     width: 98vw;
-    padding: 0 10px;
+    padding: 0 20px;
     z-index: 5;
     
 }
@@ -119,16 +119,17 @@ a{
     opacity: 0;
     visibility: hidden;
     list-style: none;
-    
+   
 }
 .dropdown-menu a{
     display: block;
     width: 100%;
+    
 }
 .dropdown-menu a:hover{
     background-color: rgba(250, 250, 250, 0.1);
     color: rgba(207, 202, 202, 0.807);
-    
+ 
 }
 .nav-list li:hover .dropdown-menu,.nav-list li:hover .mega-box{
   top: 42px;
@@ -188,7 +189,7 @@ a{
   align-items: center;
 }
 .nav-list2 a{
-      padding:5px 15px;
+      padding:5px 20px;
       border-left: 1px solid grey;
     
 }
@@ -435,6 +436,7 @@ article {
     justify-content: center;
   }
   .history-content h2{
+    color: #333;
     font-size: 3.2rem;
     margin: 20px 0;
     line-height: 3.1rem;
@@ -481,6 +483,50 @@ article {
     color: rgba(0, 0, 0, 0.547) ;
   }
  
+  /* QUOTE_CONTAINER */
+
+  .quote-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    background-color: #fff;
+    border-radius: 10px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    max-width: 58%;
+}
+
+.quote-symbol {
+    font-size: 5rem;
+    color: gray;
+}
+
+.quote {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+}
+
+.author {
+    font-size: 1.3rem;
+    color: gray;
+    margin-top: 10px;
+}
+
+.quote-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
   
 /* FOOTER */
 footer {
@@ -539,7 +585,7 @@ footer {
     font-weight: 200;
     color: #666363;
     border: 2px solid #7f7e7e;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
@@ -560,7 +606,7 @@ footer {
     width: 0;
     height: 100%;
     z-index: -1;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
     background: #09da14;
     transition: all .4s;
   }
@@ -570,5 +616,6 @@ footer {
   }
   
  .wrapper a:hover:after{
+   
     width: 100%;
   }
