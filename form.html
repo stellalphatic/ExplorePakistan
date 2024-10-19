@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Responsive Registration Form | CodingLab </title>
+  <!-- <link rel="stylesheet" href="form.css"> -->
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+ body{
+    font-family: "Akaya Kanadaka", system-ui;
+   font-weight: 400;
+   font-style: normal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/greenmountain.jpg);
+    background-size: cover;
+   
+    /* background: linear-gradient(180deg,rgb(9, 156, 205),rgb(205, 16, 16)); */
+}
+.container{
+    height: 80%;
+    width: 40%;
+    background: linear-gradient(180deg,rgba(16, 112, 53, 0.4),rgb(13, 172, 156,0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-color: red;
+    border-radius: 50px;
+}
+.title{
+    position: relative;
+    top: 0%;
+    font-size: 2.6rem;
+    margin: 20px;
+    color: rgb(82, 234, 27);
+    font-weight: 900;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.5px green;
+}
+
+.details{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 20px;
+}
+.input-box{
+    margin: 10px;
+    font-size: 2rem;
+
+}
+input{
+    border: 2px solid rgb(27, 152, 40);
+    border-radius: 20px;
+    padding: 5px;
+}
+.radioname{
+    font-size: 1.3rem;
+}
+input:hover{
+    /* border: 3px solid rgb(14, 199, 20); */
+    box-shadow: 3px 3px 10px green;
+}
+.button input{
+    color: white;
+    background: #000;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+}
+.button input:hover{
+    box-shadow: 4px 4px 10px green;
+}
+.radiobox input{
+    accent-color: rgb(0, 255, 0);
+}
+   </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="index.html">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" >
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" >
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" >
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" >
+          </div>
+          
+          <div class="input-box" >
+            <label for="pass">
+            <span class="details" >Password</span>
+            <input type="text" placeholder="Enter your password" id="pass">
+        </label>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" >
+          </div>
+          <div class="input-box">
+            <span class="details">DOB</span>
+            <input type="date" placeholder="Confirm your password" >
+          </div>
+          <!-- <select class="input-box" name="Course" id="">
+            <option >CS</option>
+            <option >CE</option>
+          </select> -->
+          <div class="input-box radiobox">
+            <label for="gender">
+            <span class="details">Gender</span>
+            <input type="radio" name="gender" id="gender"><span class="radioname">Male</span>
+        </label>
+        <label for="gender2">
+            <input type="radio" name="gender" id="gender2"><span class="radioname">Female</span>
+        </label>
+          </div>
+          <!-- <input type="file" name="" id="">
+          <input type="color" name="" id=""> -->
+
+        </div>
+       
+        </div>
+      
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
