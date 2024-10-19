@@ -229,7 +229,7 @@ a{
     }
     20%{
         background-image:url('./assets/image2.jpeg') ;
-  }
+  } 
   40%{
     background-image:url('./assets/image3.jpeg') ;
 }
@@ -393,12 +393,12 @@ article {
   figure {
     margin: 0;
     padding: 0;
-    /* aspect-ratio: 16 / 9; */
+    aspect-ratio: 16 / 9;
     overflow: hidden;
   }
   
   article img {
-    max-width: 100%;
+    width: 100%;
     transform-origin: center;
     transform: scale(1.001);
     overflow: hidden;
