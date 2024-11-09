@@ -40,8 +40,8 @@
 
 ## Screenshots
 
-![Home Page Screenshot](assets/abc.mp4)
-![Historical Sites Screenshot](assets/pakistan.jpg)
+![Home Page Screenshot](assets/image4.png)
+![Historical Sites Screenshot](assets/k2.jpg)
 <!-- Add more screenshots if available -->
 
 ## Installation
